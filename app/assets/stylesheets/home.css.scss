@@ -1,0 +1,48 @@
+// This is my home page custom style
+.page-container {
+  padding: 15px;
+  margin: auto;
+
+  form {
+    label {
+      float: left;
+      margin-left: 5px;
+      width: 100%;
+      display: inline-block;
+      max-width: 100%;
+      margin-bottom: 5px;
+      font-weight: 700;
+    }// label
+
+    input {
+      float: left;
+      margin: 5px;
+      padding: 6px 12px;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1.5;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }// input
+
+    input[type="text"] {
+      width: 300px;
+      height: 20px;
+      color: #555;
+    }// input text
+
+    input[type="submit"] {
+      text-align: center;
+      cursor: pointer;
+      white-space: nowrap;
+      vertical-align: middle;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }// input submit
+
+  }// form
+} // page-container
