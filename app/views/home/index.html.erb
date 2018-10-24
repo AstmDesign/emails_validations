@@ -1,0 +1,12 @@
+
+<!--page-container-->
+<div class="page-container">
+  <%= form_tag('', method: :get, remote: true) do %>
+
+    <%= label_tag 'user_email', 'Your Email' %>
+    <%= text_field_tag 'user_email', nil, :class => 'form-control', :placeholder => "Please type your email", :required => true, :value => params[:user_email] %>
+
+    <%= submit_tag "check" %>
+
+  <% end %>
+</div><!--page-container-->
