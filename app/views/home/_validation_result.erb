@@ -1,0 +1,21 @@
+<%
+  # Sendint the request
+  require 'net/http'
+  url = URI.parse('http://apilayer.net/api/check?access_key='+ENV["apilayer_key"]+'&email='+params[:user_email]+'')
+  request = Net::HTTP::Get.new(url.to_s)
+
+  result = Net::HTTP.start(url.host, url.port) { |http|
+    http.request(request)
+  }
+
+  # Parse result as json
+  result = JSON(result.body)
+%>
+
+<div class="<%=result['smtp_check']%>_result">
+  <% if result['smtp_check'] == true %>
+    The email <%=params[:user_email]%> smtp is valid
+  <% else %>
+    The email <%=params[:user_email]%> smtp is not valid
+  <% end %>
+</div>

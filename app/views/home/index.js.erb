@@ -1,2 +1,13 @@
 // Sending the email validation request
-alert("hello");
+
+//  Start loader
+NProgress.start();
+console.log("start the request");
+
+// Get the result
+var  content = $('<%= escape_javascript render(:partial => "validation_result") %>');
+$(".result-container").html(content).fadeIn(500);
+
+console.log("end the request");
+// End loader
+NProgress.done();

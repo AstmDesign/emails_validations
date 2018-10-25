@@ -1,5 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
+  ENV["apilayer_key"] = "318970170bd222d8ef41c9357137ec92"
 
   # Code is not reloaded between requests.
   config.cache_classes = true
