@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The emails validation application is just Ruby on Rails app built using Rails framework v 4.2.4, Just created it to test the emails validation by integrated it with the <a href='http://apilayer.com' target='_blank'> Api layer </a>.
 
-Things you may want to cover:
+# Installing The Application #
 
-* Ruby version
+First you need to make sure that your machine has Ruby & Postgres database then you need to run the below commands
 
-* System dependencies
+## Start Postgres Server ##
 
-* Configuration
+<tt>pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start</tt>
 
-* Database creation
+## Start Rails Rerver ##
 
-* Database initialization
+<tt>rails s</tt>
 
-* How to run the test suite
+## Open on The Browser ##
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<tt>http://localhost:3000</tt>
