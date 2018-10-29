@@ -4,6 +4,8 @@ The emails validation application is just Ruby on Rails app built using **Rails 
 
 # Installing The Application
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/fa83f99b5bca412899a96ead34d28018)](https://app.codacy.com/app/Astm/emails_validations?utm_source=github.com&utm_medium=referral&utm_content=AstmDesign/emails_validations&utm_campaign=Badge_Grade_Settings)
+
 First you need to make sure that your machine has Ruby & Postgres database then you need to run the below commands
 
 ## Start Postgres Server
